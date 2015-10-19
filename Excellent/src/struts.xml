@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts> 
+	<!-- 设置 编码 --> 
+	<constant name="struts.i18n.encoding" value="UTF-8" /> 
+	
+	<!-- 与spring集成 --> 
+	<constant name="struts.objectFactory" value="spring" /> 
+	
+	<!-- 继承convention-default包，定义一个默认的拦截器，根据需要还可扩展 --> 
+	<package name="excellent" extends="struts-default"> 
+		<!-- <interceptors> 
+			<interceptor-stack name="medbriStack"> 
+			<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref> 
+			</interceptor-stack> 
+		</interceptors> 
+		<default-interceptor-ref name="medbriStack" />  -->
+		
+		<!-- <global-results> 
+			<result name="suc">/sucess.jsp</result> 
+			<result name="error">/error.jsp</result> 
+		</global-results>  -->
+	</package> 
+</struts> 
+
