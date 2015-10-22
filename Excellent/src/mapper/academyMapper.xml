@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="dao.AcademyDAO">
+  <resultMap id="BaseResultMap" type="nsims.pojo.major" >
+    	<id column="ID" property="ID" jdbcType="INTEGER" />
+    	<result column="Name" property="Name" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID,Name
+  </sql>
+  
+  <!-- 查找所有学院 -->
+  <select id="selectAllAcademy" resultMap="BaseResultMap">
+		select * from academy
+  </select>
+  
+</mapper>
